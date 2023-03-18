@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>System operation</title>
+  </head>
+  <body>
+    <!-- header start
+    =========================================== -->
+    <section class="header">
+        <div class="auto__container">
+            <div class="header__inner">
+                <div class="header__inner-logo">
+                    <img src="./assets/images/logo-white.svg" alt="">
+                </div>
+                <a href="#">
+                    <span>
+                        <img src="./assets/images/icons/SignIn.svg" alt="">
+                    </span>
+                    Log out
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- header end
+    =========================================== -->
+    <!-- sidebar start
+    =========================================== -->
+    <aside class="sidebar">
+        <div class="sidebar__inner">
+            <a href="#">
+                <span>
+                    <img src="./assets/images/icons/dashboard.svg" alt="">
+                </span>
+                Dashboard
+            </a>
+            <a href="#">
+                <span>
+                    <img src="./assets/images/icons/analytics.svg" alt="">
+                </span>
+                Analytics
+            </a>
+            <a href="#">
+                <span>
+                    <img src="./assets/images/icons/newSystem.svg" alt="">
+                </span>
+                Add new System
+            </a>
+        </div>
+    </aside>
+    <!-- sidebar end
+    =========================================== -->
+    <main>
+        <!-- system start
+        =========================================== -->
+        <section class="system" id="system">
+            <div class="system__inner">
+                <h1>
+                    System operation 
+                </h1>
+                <div class="system__inner-row">
+                    <div class="systemItem">
+                        <div class="systemItem__inner">
+                            <div class="systemItem__inner-icon">
+                                <svg>
+                                    <use xlink:href="#arrow"></use>
+                                </svg>
+                            </div>
+                            <p>
+                                Up
+                            </p>
+                        </div>
+                    </div>
+                    <div class="systemItem uniq">
+                        <div class="systemItem__inner">
+                            <div class="systemItem__inner-icon">
+                                <svg class="big">
+                                    <use xlink:href="#pause"></use>
+                                </svg>
+                                <svg class="large">
+                                    <use xlink:href="#play"></use>
+                                </svg>
+                            </div>
+                            <p>
+                                Pause
+                            </p>
+                        </div>
+                    </div>
+                    <div class="systemItem">
+                        <div class="systemItem__inner">
+                            <div class="systemItem__inner-icon">
+                                <svg class="down">
+                                    <use xlink:href="#arrow"></use>
+                                </svg>
+                            </div>
+                            <p>
+                                Down
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="button" id="scheduleBtn">
+                    <span>
+                        <img src="./assets/images/icons/timer.svg" alt="">
+                    </span>
+                    Schedule
+                </button>
+                <div class="schedule" id="schedule">
+                    <div class="schedule__header">
+                        <div class="schedule__header-back" id="scheduleClose">
+                            <img src="./assets/images/icons/ArrowLeft.svg" alt="">
+                        </div>
+                        <p class="big">
+                            <span>
+                                <img src="./assets/images/icons/timer.svg" alt="">
+                            </span>
+                            Schedule
+                        </p>
+                        <div class="schedule__header-right">
+                            <a href="#" id="scheduleEdit">
+                                <span>
+                                    <img src="./assets/images/icons/edit.svg" alt="">
+                                </span>
+                                <p>
+                                    Edit
+                                </p>
+                                <p class="done">
+                                    Done
+                                </p>
+                            </a>
+                            <div class="schedule__header-add addTimeBtn">
+                                <img src="./assets/images/icons/PlusCircle-big.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule__inner">
+                        <div class="schedule__inner-list">
+                            <div class="scheduleItem">
+                                <div class="scheduleItem__status">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="scheduleItem__content">
+                                    <span>
+                                        <img src="./assets/images/icons/Trash-white.svg" alt="">
+                                    </span>
+                                    <div class="scheduleItem__content-info">
+                                        <h2>
+                                            7:00<span>AM</span>  
+                                        </h2>
+                                        <p>
+                                            Everyday
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" checked/>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="scheduleItem down">
+                                <div class="scheduleItem__status">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="scheduleItem__content">
+                                    <span>
+                                        <img src="./assets/images/icons/Trash-white.svg" alt="">
+                                    </span>
+                                    <div class="scheduleItem__content-info">
+                                        <h2>
+                                            09:00<span>AM</span>  
+                                        </h2>
+                                        <p>
+                                            Monday
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" checked />
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="scheduleItem">
+                                <div class="scheduleItem__status">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="scheduleItem__content">
+                                    <span>
+                                        <img src="./assets/images/icons/Trash-white.svg" alt="">
+                                    </span>
+                                    <div class="scheduleItem__content-info">
+                                        <h2>
+                                            10:00<span>AM</span>  
+                                        </h2>
+                                        <p>
+                                            Thursday
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" checked />
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="scheduleItem down">
+                                <div class="scheduleItem__status">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="scheduleItem__content">
+                                    <span>
+                                        <img src="./assets/images/icons/Trash-white.svg" alt="">
+                                    </span>
+                                    <div class="scheduleItem__content-info">
+                                        <h2>
+                                            14:00<span>PM</span>  
+                                        </h2>
+                                        <p>
+                                            Everyday
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" />
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="scheduleItem">
+                                <div class="scheduleItem__status">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="scheduleItem__content">
+                                    <span>
+                                        <img src="./assets/images/icons/Trash-white.svg" alt="">
+                                    </span>
+                                    <div class="scheduleItem__content-info">
+                                        <h2>
+                                            18:00<span>PM</span>  
+                                        </h2>
+                                        <p>
+                                            Sunday
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" checked />
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="button button--submit addTimeBtn" id="addTimeBtn">
+                            <span>
+                                <img src="./assets/images/icons/PlusCircle.svg" alt="">
+                            </span>
+                            Add time
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="addTime" id="addTime">
+            <form action="" class="addTime__inner">
+                <span class="addTimeClose">
+                    <img src="./assets/images/icons/close.svg" alt="">
+                </span>
+                <div class="addTime__inner-header">
+                    <div class="addTime__inner-back addTimeClose">
+                        <img src="./assets/images/icons/ArrowLeft.svg" alt="">
+                    </div>
+                    <p class="mob">
+                        Add time
+                    </p>
+                    <button type="submit" class="mob addTimeClose">
+                        Save
+                    </button>
+                    <p>
+                        <span>
+                            <img src="./assets/images/icons/timer.svg" alt="">
+                        </span>
+                        Schedule
+                    </p>
+                    <a href="#">
+                        <span>
+                            <img src="./assets/images/icons/trash.svg" alt="">
+                        </span>
+                        Delete
+                    </a>
+                </div>
+                <div class="addTime__inner-content">
+                    <label for="time" class="addTime__inner-time">
+                        <p class="big">
+                            Time
+                        </p>
+                        <div class="input">
+                            <input type="time" id="time" value="15:00">
+                            <div class="select" name="group1">
+                                <div class="select__selected">
+                                    AM
+                                </div>
+                                <input type="hidden" value="">
+                                <ul class="select__options">
+                                  <li data-value="1">AM</li>
+                                  <li data-value="2">PM</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="repeat" class="addTime__inner-time repeat">
+                        <p class="big">
+                            Repaet
+                        </p>
+                        <div class="input">
+                            <div class="select" name="group2">
+                                <div class="select__selected">
+                                    Everyday
+                                </div>
+                                <input type="hidden" value="">
+                                <ul class="select__options">
+                                  <li data-value="1">Monday</li>
+                                  <li data-value="2">Tuesday</li>
+                                  <li data-value="3">Wednesday</li>
+                                  <li data-value="4">Thursday</li>
+                                  <li data-value="5">Friday</li>
+                                  <li data-value="6">Saturday</li>
+                                  <li data-value="7">Sunday</li>
+                                  <li data-value="8">Everyday</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="addTime__inner-radios">
+                        <label for="up" class="radio">
+                            <div class="radio__button">
+                              <input type="radio" name="status" id="up" />
+                              <span></span>
+                            </div>
+                            up
+                        </label>
+                        <label for="down" class="radio">
+                            <div class="radio__button">
+                              <input type="radio" name="status" id="down" />
+                              <span></span>
+                            </div>
+                            down
+                        </label>
+                    </div>
+                    <button type="submit" class="button button--submit addTimeClose">
+                        Save
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- system end
+        =========================================== -->
+    </main>
+    <!-- Sprites
+    =========================================== -->
+    <svg style="display: none">
+        <symbol id="arrow" viewBox="0 0 13 25">
+          <g>
+            <path d="M6.64632 -2.77728e-07L0.292772 7.0595L3.82252 7.0595L3.82252 24.0023L9.47025 24.0023L9.47025 7.0595L13 7.0595L6.64632 -2.77728e-07Z"/>
+          </g>
+        </symbol>
+        <symbol id="pause" viewBox="0 0 15 23">
+          <g>
+            <rect width="5" height="23" fill="currentColor"/>
+            <rect x="10" width="5" height="23" fill="currentColor"/>
+          </g>
+        </symbol>
+        <symbol id="play" viewBox="0 0 27 31">
+          <g>
+            <path d="M27 15.5L0.749999 30.6554L0.75 0.344555L27 15.5Z" fill="currentColor"/>
+          </g>
+        </symbol>
+      </svg>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

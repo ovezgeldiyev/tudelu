@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Roc Grotesk";
+    src: url("FONTSPRINGDEMO-RocGroteskMediumRegular.eot");
+    src: url("FONTSPRINGDEMO-RocGroteskMediumRegular.eot?#iefix") format("embedded-opentype"),
+        url("FONTSPRINGDEMO-RocGroteskMediumRegular.woff2") format("woff2"),
+        url("FONTSPRINGDEMO-RocGroteskMediumRegular.woff") format("woff"),
+        url("FONTSPRINGDEMO-RocGroteskMediumRegular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roc Grotesk";
+    src: url("FONTSPRINGDEMO-RocGroteskRegular.eot");
+    src: url("FONTSPRINGDEMO-RocGroteskRegular.eot?#iefix") format("embedded-opentype"),
+        url("FONTSPRINGDEMO-RocGroteskRegular.woff2") format("woff2"),
+        url("FONTSPRINGDEMO-RocGroteskRegular.woff") format("woff"),
+        url("FONTSPRINGDEMO-RocGroteskRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roc Grotesk";
+    src: url("FONTSPRINGDEMO-RocGroteskBold.eot");
+    src: url("FONTSPRINGDEMO-RocGroteskBold.eot?#iefix") format("embedded-opentype"),
+        url("FONTSPRINGDEMO-RocGroteskBold.woff2") format("woff2"),
+        url("FONTSPRINGDEMO-RocGroteskBold.woff") format("woff"),
+        url("FONTSPRINGDEMO-RocGroteskBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,37 @@
+.sidebar {
+    background-color: $black2;
+    position: fixed;
+    top: 81px;
+    left: 0;
+    width: 220px;
+    height: calc(100% - 81px);
+    z-index: 99;
+    &__inner {
+        padding: 22px 20px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        box-sizing: border-box;
+        a {
+            width: 100%;
+            font-size: 16px;
+            line-height: 24px;
+            color: $white;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            margin-bottom: 26px;
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

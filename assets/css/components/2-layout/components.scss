@@ -1,0 +1,268 @@
+h1 {
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 500;
+  font-family: $grotesk;
+  color: $textColor;
+}
+h2 {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 400;
+  span {
+    font-size: 16px;
+  }
+}
+h3 {
+  font-size: 28px;
+  line-height: 34px;
+}
+p {
+  &.big {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  a {
+    font-weight: 500;
+    @include transition;
+    color: $main;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &.center {
+    text-align: center;
+  }
+}
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  @include transition;
+  font-family: $mainFont;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 150%;
+  &:hover {
+    opacity: 0.6;
+  }
+  &--submit {
+    padding: 12px;
+    background: $textColor;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    font-weight: 500;
+
+    color: $white;
+  }
+  &--google {
+    font-weight: 400;
+    padding: 12px;
+    color: $textColor;
+    background: $white;
+    border: 1px solid $border;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 24px;
+      margin-right: 8px;
+    }
+  }
+}
+.or {
+  margin: 8px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(43, 43, 43, 0.5);
+}
+
+main {
+  padding-top: 81px;
+}
+
+.checkbox {
+  cursor: pointer;
+  position: relative;
+
+  span {
+    display: flex;
+    width: 51px;
+    height: 31px;
+    border-radius: 99px;
+    background-color: #78788029;
+    position: relative;
+    transition: 0.2s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 2px;
+      width: 27px;
+      height: 27px;
+      box-shadow: 0px 4px 12px 0px #00000029;
+      background: $white;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      transition: 0.2s ease;
+    }
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+
+    &:checked {
+      & ~ span {
+        background-color: #65c466;
+        &::before {
+          transform: translate(75%, -50%);
+        }
+      }
+    }
+  }
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: $textColor;
+  cursor: pointer;
+  margin-right: 52px;
+  text-transform: uppercase;
+  &__button {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      margin-right: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      span {
+          display: flex;
+          border: 2px solid #49454F;
+          background-color: $white;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          transition: .2s ease;
+          box-sizing: border-box;
+
+          &::before {
+              position: absolute;
+              content: "";
+              width: 10px;
+              height: 10px;
+              background-color: $main;
+              border-radius: 50%;
+              opacity: 0;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              transition: .2s ease;
+          }
+      }
+
+      input {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 3;
+          opacity: 0;
+          cursor: pointer;
+
+          &:checked {
+              &~span {
+                border-color: $main;
+                  &::before {
+                      opacity: 1;
+                  }
+              }
+          }
+      }
+  }
+}
+.select {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  width: 46px;
+  z-index: 4;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  &.active {
+      .select {
+          &__options {
+              display: block;
+          }
+      }
+  }
+  &__selected {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      cursor: pointer;
+      box-sizing: border-box;
+      font-size: 16px;
+      line-height: 100%;
+      color: #666666;
+      padding-right: 20px;
+      &:before {
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid #666666;
+        border-right: 2px solid #666666;
+        top: 50%;
+        right: 0;
+        transform: translateY(-70%) rotate(135deg);
+
+      }
+  }
+  &__options {
+      overflow-y: auto;
+      position: absolute;
+      top: calc(100% + 8px);
+      right: -12px;
+      min-width: 100%;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      display: none;
+      z-index: 4;
+      padding: 5px;
+      background-color: $white;
+      box-shadow: 0px 4px 12px 0px #00000029;
+
+      li {
+          transition: .3s ease;
+          cursor: pointer;
+          text-align: center;
+          &:hover {
+              opacity: .8;
+          }
+      }
+  }
+}

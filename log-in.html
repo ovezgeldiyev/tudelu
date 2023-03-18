@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <!-- auth start
+    =========================================== -->
+    <section class="auth">
+      <div class="auth__inner">
+        <div class="auth__inner-image">
+          <img src="./assets/images/auth.jpg" alt="auth" />
+        </div>
+        <div class="auth__inner-form">
+          <div class="auth__inner-logo">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </div>
+          <form action="" class="form">
+            <div class="form__header">
+              <legend>Welcome back</legend>
+              <p>Please enter your contact details to connect.</p>
+            </div>
+
+            <div class="input__outer">
+              <label for="">Email address</label>
+              <div class="input">
+                <input type="text" placeholder="Email address" />
+              </div>
+            </div>
+            <div class="input__outer">
+              <label for="">Password</label>
+              <div class="input passwordInput">
+                <input type="password" placeholder="Password" />
+                <button type="button" class="hideShow">
+                  <img
+                    class="show"
+                    src="assets/images/icons/Eye.svg"
+                    alt="eye"
+                  />
+                  <img
+                    class="hide"
+                    src="assets/images/icons/EyeSlash.svg"
+                    alt="eye"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="check">
+                <input type="checkbox" />
+                <label for=""> Remember me </label>
+              </div>
+              <p>
+                <a href="">Forgot password</a>
+              </p>
+            </div>
+
+            <button type="submit" class="button button--submit">Log in</button>
+            <div class="or">or</div>
+            <button class="button button--google">
+              <img src="./assets/images/icons/google.svg" alt="google" />
+              Log in with Google
+            </button>
+            <p class="center">
+              Don’t have an account ? <a href="sign-up.html">Sign up here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- auth end
+    =========================================== -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
